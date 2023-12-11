@@ -22,7 +22,7 @@ print(n)
 
 # ELSE
 if n == 1:
-    print('Jeden')
+    print('Jaden')
 elif n == 2:
     print('dwa')
 elif n == 3:
@@ -33,6 +33,7 @@ elif n == 5:
     print('pięc')
 else:
     print('tej liczby nie znam')
+
 
 # Warunki logiczne
 
@@ -51,3 +52,12 @@ else:
     print(f'{i} jest nieparzyste')
 
 
+
+a = int(input("podaj liczbe"))
+b = a/10
+c = a//10
+i = a+b
+if(i % 7== 0 and a % 2== 0):
+    print("liczba jest dobra")
+else:
+    print("liczba jest zla")
