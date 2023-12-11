@@ -9,13 +9,12 @@ else:
     print('Not three')
 
 if a == 3:
-   print("three")
+    print("three")
 else:
-   if a == 4:
-       print("four")
-   else:
-       print('Not three or four')
-
+    if a == 4:
+        print("four")
+    else:
+        print('Not three or four')
 
 n = int(input('Podaj liczbę'))
 print(n)
@@ -34,7 +33,6 @@ elif n == 5:
 else:
     print('tej liczby nie znam')
 
-
 # Warunki logiczne
 
 if (n == 17) or not (n == 17):
@@ -52,12 +50,12 @@ else:
     print(f'{i} jest nieparzyste')
 
 
-
-a = int(input("podaj liczbe"))
-b = a/10
-c = a//10
-i = a+b
-if(i % 7== 0 and a % 2== 0):
-    print("liczba jest dobra")
-else:
-    print("liczba jest zla")
+for a in range(1,100):
+# a = int(input("podaj liczbe"))
+    b = a % 10
+    c = a // 10
+    i = b + c
+    if (i % 7 == 0 and a % 2 == 0):
+        print(f"{a} liczba jest dobra")
+    # else:
+    #     print("liczba jest zla")
