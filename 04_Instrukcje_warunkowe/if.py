@@ -74,6 +74,8 @@ for a in range(1,100):
         print(f"{a} liczba jest dobra")
     # else:
     #     print("liczba jest zla")
+
+# Zadanie 3
 # wczytaj przy użyciu input() liczbę; wypisz sumę jej cyfr
 number = input()
 suma = 0
@@ -81,3 +83,27 @@ for c in str(number):
        print(c,suma)
        suma += int(c) #suma = suma + c
 print(suma)
+
+# Zadanie 4
+# wczytać z przez input liczbę,
+# stworzyć choinkę o odpowiedniej wysokosci
+n = int(input("wysokosc choinki"))
+for i in range(n):
+    print(f'{" "*(n-i)}{"*"*(2*i+1)}')
+for i in range(n):
+    if i == 2:
+        break
+    print(f'{" " * (n - i)}{"*" * (2 * i + 1)}')
+
+# Zadanie 5
+# stwórz pętle pobierającą napisy z wejścia aż do napotkania pustego napisu; wypisz listę posortowaną alfabetycznie wczytanych napisów
+# stwórz pętle pobierającą liczby z wejścia aż do napotkania pustego napisu; wypisz ostatnią parzystą
+
+l = []
+while True:
+    input ("wpisz cos albo enter")
+    if (lst == ""):
+        break
+    lista.append(lst)
+lista.sort(key=str)
+print(lista)
