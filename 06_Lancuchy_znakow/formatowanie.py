@@ -32,3 +32,13 @@ f'{pi:^30.2f}'
 f'{"-"*10}HELLO{"-"*10}'
 f'{"HELLO":-^25s}'
 
+# Zadanie 4
+# wczytać z przez input liczbę,
+# stworzyć choinkę o odpowiedniej wysokosci
+n = int(input("wysokosc choinki"))
+for i in range(n):
+    print(f'{" "*(n-i)}{"*"*(2*i+1)}')
+for i in range(n):
+    if i == 2:
+        break
+    print(f'{" " * (n - i)}{"*" * (2 * i + 1)}')
