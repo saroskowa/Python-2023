@@ -48,3 +48,5 @@ while n > 0:
 else:
     print('Koniec')
 
+
+16 34 52 70

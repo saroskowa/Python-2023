@@ -49,7 +49,10 @@ if (i := int(input("podaj liczbę naturalną"))) % 2 == 0:
 else:
     print(f'{i} jest nieparzyste')
 
-
+# zadanie 1
+# wczytaj liczbę 2 cyfrową -
+# wypisz Dobra liczba jeśli suma jej cyfr dzieli się przez 7
+# oraz liczba jest parzysta, a Zła liczba w przeciwnym wypadku
 a = int(input("podaj liczbe"))
     b = a % 10
     c = a // 10
@@ -59,6 +62,9 @@ a = int(input("podaj liczbe"))
     else:
     print("liczba jest zla")
 
+# zadanie 2
+# Wypisać wszystkie liczby od 1 do 100 które spełniają warunek z poprzedniego zadania
+# wczytaj przy użyciu input() liczbę; wypisz sumę jej cyfr
 for a in range(1,100):
 # a = int(input("podaj liczbe"))
     b = a % 10
