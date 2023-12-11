@@ -50,6 +50,15 @@ else:
     print(f'{i} jest nieparzyste')
 
 
+a = int(input("podaj liczbe"))
+    b = a % 10
+    c = a // 10
+    i = b + c
+    if (i % 7 == 0 and a % 2 == 0):
+        print("liczba jest dobra")
+    else:
+    print("liczba jest zla")
+
 for a in range(1,100):
 # a = int(input("podaj liczbe"))
     b = a % 10
