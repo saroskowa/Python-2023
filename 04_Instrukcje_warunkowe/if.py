@@ -64,7 +64,7 @@ a = int(input("podaj liczbe"))
 
 # zadanie 2
 # Wypisać wszystkie liczby od 1 do 100 które spełniają warunek z poprzedniego zadania
-# wczytaj przy użyciu input() liczbę; wypisz sumę jej cyfr
+
 for a in range(1,100):
 # a = int(input("podaj liczbe"))
     b = a % 10
@@ -74,3 +74,10 @@ for a in range(1,100):
         print(f"{a} liczba jest dobra")
     # else:
     #     print("liczba jest zla")
+# wczytaj przy użyciu input() liczbę; wypisz sumę jej cyfr
+number = input()
+suma = 0
+for c in str(number):
+       print(c,suma)
+       suma += int(c) #suma = suma + c
+print(suma)
