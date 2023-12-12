@@ -47,3 +47,16 @@ s2.join(["Ala", "ma", "kota"])
 3 in l
 
 l.insert(2, 100)
+
+# Zadanie 5
+# stwórz pętle pobierającą napisy z wejścia aż do napotkania pustego napisu; wypisz listę posortowaną alfabetycznie wczytanych napisów
+# stwórz pętle pobierającą liczby z wejścia aż do napotkania pustego napisu; wypisz ostatnią parzystą
+
+l = []
+while True:
+    b = input("wpisz cos albo enter")
+    if (b == ""):
+        break
+    lista = (b)
+lista.sort()
+print(lista)
