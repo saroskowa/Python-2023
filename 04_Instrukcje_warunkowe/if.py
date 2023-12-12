@@ -95,6 +95,19 @@ for i in range(n):
         break
     print(f'{" " * (n - i)}{"*" * (2 * i + 1)}')
 
+# alterntywa za pomoca funkcji
+def choinka(poziom, separator=" ", znak="*"):
+    S = separator
+    G = znak
+    for i in range(1, poziom + 1):
+        print(S * (poziom - i) + G * (2 * i - 1))
+    print(S * (poziom - 1) + G)
+    print(S * (poziom - 2) + G * 3)
+
+
+choinka(5)
+choinka(poziom=5, separator="$")
+
 # Zadanie 5
 # stwórz pętle pobierającą napisy z wejścia aż do napotkania pustego napisu; wypisz listę posortowaną alfabetycznie wczytanych napisów
 # stwórz pętle pobierającą liczby z wejścia aż do napotkania pustego napisu; wypisz ostatnią parzystą
