@@ -37,6 +37,19 @@ f()
 # ord - podaje kod calkowity danego znaku
 # chr - podaje znak odpowiadający danemu kodowi całkowitemu
 
-def alphabet_range (start, end, step):
-    return [chr(x) for x in range(ord(start), ord(end), step)]
-alphabet_range ("a", "f", 1)
+def alphabet_range(start="A", end="z", step=1):
+    return (chr(x) for x in range(ord(start), ord(end), step))
+# alphabet_range ("a", "f", 1)
+list(alphabet_range(end="N"))
+
+# to samo tylko, skopiowane z chatu
+def alphabet_range(start="A", end="z", step=1):
+    return (chr(x) for x in range(ord(start), ord(end), step))
+
+
+#alphabet_range("a", "f", 1)
+
+list(alphabet_range(end="M"))
+
+
+
