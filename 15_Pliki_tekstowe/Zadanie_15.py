@@ -11,4 +11,6 @@ with open(sys.argv[1]) as csvfile:
 print(
     sum([float(x['Budget']) for x in data if x['Director'] == sys.argv[2]])
 )
-print(data)
+# print(data)
+
+# do terminala 15_Pliki_tekstowe> python .\Zadanie_15.py .\data\jamesbond.csv "Sam Menedes"
