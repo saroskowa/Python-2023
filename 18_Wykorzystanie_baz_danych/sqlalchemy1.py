@@ -31,3 +31,16 @@ result = (session
           .query(Orders, FoodItem).all())
 for row in result:
     print(row.__dict__)
+
+result = session.query(Orders, OrdersItem).filter(Orders.id == OrdersItem.orders_id).all()
+for row in result:
+    print(row[0], row[1])
+
+result = session.query(Orders).all()
+for row in result:
+    print(row.__dict__)
+
+result = (session
+          .query(Orders, FoodItem).all())
+for row in result:
+    print(row[1].__dict__)

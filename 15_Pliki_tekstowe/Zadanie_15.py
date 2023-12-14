@@ -13,4 +13,4 @@ print(
 )
 # print(data)
 
-# do terminala 15_Pliki_tekstowe> python .\Zadanie_15.py .\data\jamesbond.csv "Sam Menedes"
+# do terminala 15_Pliki_tekstowe> python .\Zadanie_15.py .\data\jamesbond.csv "Sam Mendes"

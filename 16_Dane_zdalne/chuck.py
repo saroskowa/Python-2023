@@ -6,7 +6,9 @@ response = requests.request(method="GET", url=url)
 
 pprint(response.json())
 
-print()
-print(25*"*")
-print()
+# print()
+# print(25*"*")
+# print()
+# te printy pokazuje jedyne dekoracyjne gwiazdki
+
 print(response.json()['value'])
