@@ -12,7 +12,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
 Base = automap_base()
-db_url = "postgresql+psycopg2://my_user:secret@127.0.0.1/my_database"
+db_url = "postgresql+psycopg2://m_user:secret@127.0.0.1/m_user"
 engine = create_engine(db_url)
 
 # reflect the tables
