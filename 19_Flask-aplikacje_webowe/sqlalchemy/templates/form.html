@@ -67,6 +67,17 @@ ul li::before {
     <input type="text" id="name" name="name" value="Przykładowe imię"><br>
     <input class="button button1" type="submit" value="Dodaj !">
 </form>
+
+<form action="/remove">
+<label for="values">Wybierz uzytkownika:</label>
+<select name="values" id="values">
+    {% for item in data  %}
+   <option value="{{ item.username }}">{{ item.username }}</option>
+{% endfor %}
+</select>
+    <input class="button button1" type="submit" value="Usun">
+</form>
+
 <ul>
     {% for item in data %}
     <li>{{ item }}</li>

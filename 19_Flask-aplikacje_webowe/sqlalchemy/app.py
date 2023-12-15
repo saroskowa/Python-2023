@@ -67,10 +67,14 @@ def add():
 @app.route('/remove')
 def remove():
     args = request.args
-    remove_user(args["name"], db.session)
+    remove_user(args["values"], db.session)
     no_error = True
     if no_error:
         tytul = "Usunieto użytkownika"
     return render_template('form.html', data=get_users(db.session),
                            no_error=no_error,
                            tytul=tytul)
+
+
+# app laczy sie z form i pracuje z form z folderu sqlalchemy,
+# jak sie wlaczy ktorekolwiek app.py trzeba znalexc do ktorego html sie odwoluje
