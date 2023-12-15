@@ -78,3 +78,4 @@ def remove():
 
 # app laczy sie z form i pracuje z form z folderu sqlalchemy,
 # jak sie wlaczy ktorekolwiek app.py trzeba znalexc do ktorego html sie odwoluje
+# zawsze na początek trzeba zrobić bazę danych (na samej górze) robimy w teminalu
